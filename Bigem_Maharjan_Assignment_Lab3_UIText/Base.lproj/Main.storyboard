@@ -19,21 +19,20 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGJ-Vr-GaS">
                                 <rect key="frame" x="59" y="20" width="296" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="given-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1HS-Ba-10A">
                                 <rect key="frame" x="59" y="74" width="296" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Di1-Mr-GcL">
                                 <rect key="frame" x="59" y="128" width="296" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="country-name"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="At8-FT-ktY">
-                                <rect key="frame" x="139" y="548" width="134" height="39.666666666666629"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="At8-FT-ktY">
+                                <rect key="frame" x="141" y="548" width="132" height="39.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
@@ -50,9 +49,8 @@
                                     <action selector="AddUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tW-9x-xcd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etc-0h-BbN">
-                                <rect key="frame" x="139" y="607.66666666666663" width="134" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etc-0h-BbN">
+                                <rect key="frame" x="141" y="607.66666666666663" width="132" height="39"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
@@ -70,9 +68,8 @@
                                     <action selector="SubmitForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2w9-pq-FCd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chi-zy-Uqa">
-                                <rect key="frame" x="139" y="666.66666666666663" width="134" height="39.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chi-zy-Uqa">
+                                <rect key="frame" x="141" y="666.66666666666663" width="132" height="39.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
@@ -90,8 +87,8 @@
                                     <action selector="ClearForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeK-mw-mad"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LuZ-I7-GBy">
-                                <rect key="frame" x="59" y="236" width="296" height="200"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuZ-I7-GBy">
+                                <rect key="frame" x="59" y="236" width="296" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -100,11 +97,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAS-za-KZe">
                                 <rect key="frame" x="59" y="182" width="296" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="qlkadmlkasmd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-FS-rmE">
-                                <rect key="frame" x="59" y="463" width="296" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-FS-rmE">
+                                <rect key="frame" x="59" y="513" width="296" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -113,20 +109,33 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.85490196078431369" green="0.8901960784313725" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="At8-FT-ktY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="076-If-PdN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="chi-zy-Uqa" secondAttribute="bottom" constant="30" id="0HR-mt-e7a"/>
                             <constraint firstItem="xAS-za-KZe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="31Z-cc-y45"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eGJ-Vr-GaS" secondAttribute="trailing" constant="59" id="6ha-82-V9x"/>
+                            <constraint firstItem="TU4-FS-rmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="AGK-Fj-0Um"/>
                             <constraint firstItem="Di1-Mr-GcL" firstAttribute="top" secondItem="1HS-Ba-10A" secondAttribute="bottom" constant="20" id="BwF-0B-zHA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="chi-zy-Uqa" secondAttribute="trailing" constant="141" id="D2R-oH-iqK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xAS-za-KZe" secondAttribute="trailing" constant="59" id="EUb-Ha-Dps"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LuZ-I7-GBy" secondAttribute="trailing" constant="59" id="Ha7-gA-1Ht"/>
                             <constraint firstItem="eGJ-Vr-GaS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LmK-SV-f8w"/>
                             <constraint firstItem="1HS-Ba-10A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="NUs-Wp-M8I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Di1-Mr-GcL" secondAttribute="trailing" constant="59" id="Naf-Jm-TRR"/>
                             <constraint firstItem="1HS-Ba-10A" firstAttribute="top" secondItem="eGJ-Vr-GaS" secondAttribute="bottom" constant="20" id="Rst-qr-5fu"/>
+                            <constraint firstItem="chi-zy-Uqa" firstAttribute="top" secondItem="Etc-0h-BbN" secondAttribute="bottom" constant="20" id="Sh9-Ct-f27"/>
+                            <constraint firstItem="Etc-0h-BbN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="UYB-tA-rnC"/>
                             <constraint firstItem="LuZ-I7-GBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="aKF-Xp-nc9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="At8-FT-ktY" secondAttribute="trailing" constant="141" id="asu-2V-1K1"/>
                             <constraint firstItem="xAS-za-KZe" firstAttribute="top" secondItem="Di1-Mr-GcL" secondAttribute="bottom" constant="20" id="cOf-pW-6aS"/>
+                            <constraint firstItem="chi-zy-Uqa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="eBe-4Q-F7m"/>
+                            <constraint firstItem="Etc-0h-BbN" firstAttribute="top" secondItem="At8-FT-ktY" secondAttribute="bottom" constant="20" id="eOl-uD-5DG"/>
                             <constraint firstItem="eGJ-Vr-GaS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="gVQ-Ea-GMq"/>
+                            <constraint firstItem="TU4-FS-rmE" firstAttribute="top" secondItem="LuZ-I7-GBy" secondAttribute="bottom" constant="27" id="lyb-dT-sKO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Etc-0h-BbN" secondAttribute="trailing" constant="141" id="p40-C3-g5f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1HS-Ba-10A" secondAttribute="trailing" constant="59" id="pkJ-Nt-xnl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TU4-FS-rmE" secondAttribute="trailing" constant="59" id="s10-ls-HTn"/>
                             <constraint firstItem="LuZ-I7-GBy" firstAttribute="top" secondItem="xAS-za-KZe" secondAttribute="bottom" constant="20" id="tBC-8X-Ck0"/>
+                            <constraint firstItem="At8-FT-ktY" firstAttribute="top" secondItem="TU4-FS-rmE" secondAttribute="bottom" constant="35" id="uef-gW-vuO"/>
                             <constraint firstItem="Di1-Mr-GcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="ymM-Ql-Kdw"/>
                         </constraints>
                     </view>
